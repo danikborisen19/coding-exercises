@@ -7,15 +7,31 @@ using System.Threading.Tasks;
 
 namespace FirstProject
 {
-    class Car
+    class MyClass
     {
+
         string color = "red";
-        static void Main(string[] args)
+        int maxSpeed = 200;
+
+        public void fullThrottle()
         {
-            Car myObj1 = new Car();
-            Car myObj2 = new Car();
-            Console.WriteLine(myObj1.color);
-            Console.WriteLine(myObj2.color);
+            Console.WriteLine("The car is going as fast as it can!");
+        }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                MyClass myCar = new MyClass();
+                myCar.fullThrottle();
+            }
         }
     }
 }
+        
+
+
+
+
+
+
+
